@@ -116,4 +116,4 @@ In Kong we can add plugins to a whole services or specifc routes of a service de
 	- realm #name of the realm 
 	- client ID #name of the client we created (from keycloak) 
 	- client secret #saved in above steps
-	- discovery - [https://keycloak-external-ip/auth/realms/master/.well-known/openid-configuration](https://keycloak.mockharsh.tk:8180/auth/realms/master/.well-known/openid-configuration)  (my keycloak is running [here](https://831f7d04-us-east.lb.appdomain.cloud))
+	- discovery - [https://[keycloak-external-ip]/auth/realms/master/.well-known/openid-configuration](https://831f7d04-us-east.lb.appdomain.clou/auth/realms/master/.well-known/openid-configuration)  (my keycloak is running [here](https://831f7d04-us-east.lb.appdomain.cloud))
