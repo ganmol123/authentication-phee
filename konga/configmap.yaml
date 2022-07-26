@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: konga-config
+  labels:
+    app.kubernetes.io/name: konga
+    helm.sh/chart: konga-1.0.0
+    app.kubernetes.io/instance: konga
+    app.kubernetes.io/managed-by: Helm
+data:
+  PORT: "1337"
+  NODE_ENV: development
+  # SSL_KEY_PATH: 
+  # SSL_CRT_PATH: 
+  KONGA_HOOK_TIMEOUT: "60000"
+  DB_ADAPTER: postgres
+  # DB_URI: 
+  DB_HOST: postgres-postgresql
+  DB_PORT: "5432"
+  DB_USER: root
+  DB_PASSWORD: password
+  DB_DATABASE: konga
+  DB_PG_SCHEMA: public
+  # TOKEN_SECRET: 
+  KONGA_LOG_LEVEL: debug

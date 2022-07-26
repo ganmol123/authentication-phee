@@ -1,0 +1,18 @@
+image:
+  registry: docker.io
+  repository: bitnami/postgresql
+  tag: 13.7.0-debian-11-r14
+  pullPolicy: IfNotPresent
+  ## Optionally specify an array of imagePullSecrets.
+  ## Secrets must be manually created in the namespace.
+
+  pullSecrets: []
+  debug: false
+
+# define default database user, name, and password for PostgreSQL deployment
+auth:
+  enablePostgresUser: true
+  postgresPassword: "password"
+  username: "root"
+  password: "password"
+  database: "kong"
