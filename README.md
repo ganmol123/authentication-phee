@@ -67,6 +67,10 @@ The kong-values.yaml file can be found under kong. Make sure to add database con
 ```
 helm install konga .
 ```
+- Add the reqired values to konga-values.yaml and run
+```
+helm upgrade kong . -f konga-values.yaml
+```
 - Inorder to expose konga, use port forwarding or expose using a load balancer service. 
 - On logging for the first time, you will be promted to create a user
 - Setup a new connection to kong by adding the kong admin service name. 
